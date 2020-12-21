@@ -119,8 +119,6 @@ def get_data_list(file_name):
 
 
 if __name__ == '__main__':
-    img_dir = r"E:\zj\dataset\icdar2015\test\img"
-    annot_dir = r"E:\zj\dataset\icdar2015\test\gt"
-
-    data_list = get_data_list(r'E:\zj\dataset\icdar2015\test\test.txt')
+    txt_path = ''
+    data_list = get_data_list(txt_path)
     create_coco(data_list, 'test', dataset_name='ICDAR2015')
